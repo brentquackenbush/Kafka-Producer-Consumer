@@ -20,7 +20,7 @@
   - Consumers reads data from Kafka Topic
 - Topic can have partitions and each partition has messages with an offset (an id)
 
-## Producers
+### Producers
 - Producers can send messages with a key or not.
 - Kafka serializes the key and also the value into bytes.
 - Different types of serializers for Kafka Messages: JSON, Int, Float, Avro, Protobuf
@@ -29,7 +29,7 @@
 - Uses murmur2 algorithm 
     -targetPartition = Math.abs(Utils.murmur2(keyByes)) % (numPartitions -1)
 
-## Consumers
+### Consumers
 
 - Consumers read data from a topic (identified by name) -pull model 
 - Data is read in order from low to high offset with each partitions. 
@@ -40,16 +40,16 @@ At least once,
 At most once,
 Exactly once,
 
-## Kafka Brokers
+### Kafka Brokers
 
 - a kafka cluster is composted of multiple brokers(servers) called a Kafka broker
 - only need to connect to one broker and the kafka clients will know how to be connected to the entire cluster
 - Leader for a partition; only one broker can be a leader for a given parittion
 
-## Producer acknolwedgements (acks)
+### Producer acknolwedgements (acks)
 - Producers can chose to receive acknowledgement of data writes
 
-## ZooKeeper
+### ZooKeeper
 
 [Conduktor](https://www.conduktor.io) is about making Kafka accessible to everyone. Check out our free Kafka learning website [Kafkademy](https://kafkademy.com/) and our Apache Kafka Desktop Client [Conduktor DevTools](https://conduktor.io/download)
 
