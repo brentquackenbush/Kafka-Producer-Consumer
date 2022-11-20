@@ -42,8 +42,8 @@ Exactly once,
 
 ## Kafka Brokers
 
--a kafka cluster is composted of multiple brokers(servers) called a Kafka broker
--only need to connect to one broker and the kafka clients will know how to be connected to the entire cluster
+- a kafka cluster is composted of multiple brokers(servers) called a Kafka broker
+- only need to connect to one broker and the kafka clients will know how to be connected to the entire cluster
 - Leader for a partition; only one broker can be a leader for a given parittion
 
 ## Producer acknolwedgements (acks)
